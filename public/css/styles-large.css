@@ -1,0 +1,29 @@
+@media screen and (min-width: 321px) {
+    #wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 0.5rem;
+    }
+
+    body {
+        background: #231123;
+    }
+    
+    #main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #upgrades {
+        margin: 0;
+    }
+
+    #reviews > ul {
+        font-size: 1rem;
+    }
+
+    #hero {
+        margin: 3rem;
+    }
+}
