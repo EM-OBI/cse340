@@ -26,4 +26,18 @@
     #hero {
         margin: 3rem;
     }
+
+    /* style inventory by classification */
+    #inv-display {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    #inv-display > li a {
+        color: #231123;
+        text-decoration: none;
+    }
 }
