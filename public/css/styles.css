@@ -168,3 +168,27 @@ section {
   color: #231123;
   text-decoration: none;
 }
+
+/* Style details page */
+.main-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-image-s img{
+  width: 100%;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.detail {
+  padding: 0.2rem;
+}
+
+.text-details {
+  box-sizing: border-box;
+  border: 2px solid #231123;
+  background: #b4c8d7;
+}
