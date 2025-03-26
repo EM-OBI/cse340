@@ -3,7 +3,8 @@ const baseController = {}
 
 baseController.buildHome = async function(req, res){
   const nav = await utilities.getNav()
-  res.render("index", {title: "Home", nav})
+  // req.flash("error", "Flash message.");
+  res.render("index", {title: "Home", nav, errors: null,})
 }
 
 baseController.throwError = async function(req, res, next){
