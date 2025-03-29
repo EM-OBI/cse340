@@ -11,8 +11,21 @@ router.get("/login", utilities.handleErrors(accountController.buildLogin));
 //Route to registration view
 router.get("/register", utilities.handleErrors(accountController.buildRegistration))
 
+// Process the login attempt
+router.post(
+    "/login",
+    regValidate.loginRules(),
+    regValidate.checkLoginData,
+    utilities.handleErrors(
+        (req, res) => {
+            res.status(200).send('login process')
+        }
+    )
+  )
+
 //Route to submit registration form
-router.post("/register",
+router.post(
+    "/register",
     regValidate.registrationRules(),
     regValidate.checkRegData,
     utilities.handleErrors(accountController.registerAccount))
