@@ -251,6 +251,13 @@ input:not([type="submit"]):not([type="checkbox"]) {
   font-size: 0.8rem;
 }
 
+:valid {
+  border: 2px solid green;
+}
+:invalid {
+  border: 2px solid red;
+}
+
 /* Style management page */
 .manage-inv {
   margin: 1rem 0;
