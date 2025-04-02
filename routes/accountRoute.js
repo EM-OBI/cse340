@@ -5,6 +5,9 @@ const accountController = require("../controllers/accountController")
 const utilities = require("../utilities");
 const regValidate = require("../utilities/account-validation")
 
+//Route to account management page
+router.get("/", utilities.checkLogin, utilities.handleErrors(accountController.deliverAccountManagement));
+
 //Route to request login view through accController
 router.get("/login", utilities.handleErrors(accountController.buildLogin));
 
@@ -16,11 +19,7 @@ router.post(
     "/login",
     regValidate.loginRules(),
     regValidate.checkLoginData,
-    utilities.handleErrors(
-        (req, res) => {
-            res.status(200).send('login process')
-        }
-    )
+    utilities.handleErrors(accountController.accountLogin)
   )
 
 //Route to submit registration form

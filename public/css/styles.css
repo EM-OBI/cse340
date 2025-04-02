@@ -195,7 +195,7 @@ section {
 }
 
 /* Style login/registration form */
-#login-form, #reg-form, #add-classification, #add-inventory {
+#login-form, #reg-form, #add-classification, #add-inventory, #edit-inventory {
   margin: 1rem auto;
   max-width: 300px;
   display: flex;
@@ -283,4 +283,14 @@ input:not([type="submit"]):not([type="checkbox"]) {
 .manage-inv a:hover {
   background: #b4c8d7;
   color: #231123;
+}
+
+
+/* Style table */
+td > a.modify, td > a.delete {
+  padding: 0.5rem 0.5rem;
+}
+
+tr {
+  height: 44px;
 }
