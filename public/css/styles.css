@@ -195,7 +195,7 @@ section {
 }
 
 /* Style login/registration form */
-#login-form, #reg-form, #add-classification, #add-inventory, #edit-inventory {
+#login-form, #reg-form, #add-classification, #add-inventory, #edit-inventory, #delete-inventory {
   margin: 1rem auto;
   max-width: 300px;
   display: flex;
