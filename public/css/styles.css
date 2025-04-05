@@ -195,7 +195,7 @@ section {
 }
 
 /* Style login/registration form */
-#login-form, #reg-form, #add-classification, #add-inventory, #edit-inventory, #delete-inventory {
+#login-form, #reg-form, #add-classification, #add-inventory, #edit-inventory, #delete-inventory, #details-update-form, #password-update-form {
   margin: 1rem auto;
   max-width: 300px;
   display: flex;
@@ -293,4 +293,14 @@ td > a.modify, td > a.delete {
 
 tr {
   height: 44px;
+}
+
+/* Style account management page */
+#account-mgt {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1rem auto;
+  justify-content: center;
+  align-items: center;
 }
