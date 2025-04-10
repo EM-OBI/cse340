@@ -45,4 +45,36 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+
+    /* Style header */
+    #top-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      
+      #search {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+      
+      #search-bar {
+        flex: 1 1 200px;
+      }
+      
+      .submit-search {
+        flex: 0 0 auto;
+      }
+      
+      #tools {
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+        flex: 0 0 auto;
+      }
 }

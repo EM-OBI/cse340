@@ -15,6 +15,7 @@ const inventoryRoute = require("./routes/inventoryRoute")
 const accountRoute = require("./routes/accountRoute")
 const utilities = require("./utilities/")
 const errorRoute = require("./routes/errorRoute")
+const searchRoute = require("./routes/searchRoute")
 const session = require("express-session")
 const pool = require("./database")
 const bodyParser = require("body-parser")
@@ -56,6 +57,9 @@ app.set("view engine", "ejs")
 app.use(expressLayouts)
 app.set("layout", "./layouts/layout")
 
+// Search route
+app.use("/search", searchRoute)
+
 // Inventory routes
 app.use("/inv", inventoryRoute)
 
@@ -65,7 +69,7 @@ app.use("/account", accountRoute)
 // Static files (HTML, CSS, JS) route
 app.use(static)
 
-// index route
+// Index route
 app.get("/", utilities.handleErrors(baseController.buildHome))
 
 
